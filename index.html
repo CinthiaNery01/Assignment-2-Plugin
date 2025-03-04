@@ -6,13 +6,67 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Test</title>
+
 </head>
 
 <body>
+    <div class="container" style="background-color: #b1fc03; text-align: center" ;>
 
-    <div class="selector">Hello</div>
-    <div class="lax lax_preset_fadeIn:50:100 lax_preset_spin"></div>
+        <h1> Welcome!</h1>
+        <p>The following animation was built with CreepyFace Plugin which is a fun JavaScript library that makes any
+            face look at the pointer, a firefly or dance! This plugin makes your website more fun and interactive with
+            just 13 lines of code.</p>
+        <script src="https://creepyface.io/creepyface.js"></script>
+
+        <img data-creepyface src="https://creepyface.io/img/nala/serious"
+            data-src-hover="https://creepyface.io/img/nala/hover" data-src-look-0="https://creepyface.io/img/nala/0"
+            data-src-look-45="https://creepyface.io/img/nala/45" data-src-look-90="https://creepyface.io/img/nala/90"
+            data-src-look-135="https://creepyface.io/img/nala/135"
+            data-src-look-180="https://creepyface.io/img/nala/180"
+            data-src-look-225="https://creepyface.io/img/nala/225"
+            data-src-look-270="https://creepyface.io/img/nala/270"
+            data-src-look-315="https://creepyface.io/img/nala/315" />
+
+
+        <img data-creepyface src="images/serious.jpeg" data-src-hover="images/hover.jpeg"
+            data-src-look-0="images/0.jpeg" data-src-look-45="images/45.jpeg" data-src-look-90="images/90.jpeg"
+            data-src-look-135="images/135.jpeg" data-src-look-180="images/180.jpeg" data-src-look-225="images/225.jpeg"
+            data-src-look-270="images/270.jpeg" data-src-look-315="images/315.jpeg" />
+
+
+    </div>
+
+    <div class="container">
+
+        <script src="https://creepyface.io/creepyface.js"></script>
+        <script src="https://unpkg.com/creepyface-dance"></script>
+        <img data-creepyface data-points="bensound-buddy" src="https://creepyface.io/img/nala/serious"
+            data-src-hover="https://creepyface.io/img/nala/hover" data-src-look-0="https://creepyface.io/img/nala/0"
+            data-src-look-45="https://creepyface.io/img/nala/45" data-src-look-90="https://creepyface.io/img/nala/90"
+            data-src-look-135="https://creepyface.io/img/nala/135"
+            data-src-look-180="https://creepyface.io/img/nala/180"
+            data-src-look-225="https://creepyface.io/img/nala/225"
+            data-src-look-270="https://creepyface.io/img/nala/270"
+            data-src-look-315="https://creepyface.io/img/nala/315" />
+        <audio src="https://www.bensound.com/bensound-music/bensound-buddy.mp3" controls></audio>
+        <script>
+            const { repeat, circle } = creepyfaceDance.moves
+            creepyfaceDance.makePointProvider({
+                name: 'bensound-buddy',
+                audio: document.querySelector('audio'),
+                bpm: 150,
+                firstBeat: 0,
+                choreography: repeat(4)([
+                    ...repeat(20)(['w', 'e', 'n', 's']),
+                    ...repeat(20)(['nw', 'ne', 'sw', 'se']),
+                    ...repeat(20)(circle('n')),
+                    ...repeat(20)(circle('s', true)),
+                ]),
+            })
+        </script>
+
+    </div>
+
 </body>
 
 </html>
