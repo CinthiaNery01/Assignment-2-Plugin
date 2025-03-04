@@ -1,71 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
 
+    <title>Bootstrap demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <style>
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 50%;
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container" style="background-color: #b1fc03; text-align: center" ;>
+    <div class="container py-3" style="text-align: center">
+        <div class="row">
 
-        <h1> Welcome!</h1>
-        <p>The following animation was built with CreepyFace Plugin which is a fun JavaScript library that makes any
-            face look at the pointer, a firefly or dance! This plugin makes your website more fun and interactive with
-            just 13 lines of code.</p>
-        <script src="https://creepyface.io/creepyface.js"></script>
+            <h1> Welcome!</h1>
+            <h3>The following animation was built with CreepyFace Plugin which is a fun JavaScript library that makes
+                any
+                face look at the pointer, a firefly or dance! This plugin makes your website more fun and
+                interactive with
+                just 13 lines of code.</h3>
+        </div>
+        <div class="row">
+            <div class="column" style="background-color: #ffccad;border-radius: 2em; border-color: white;">
+                <h4>
+                    CreepyFace Plugin Features
+                </h4>
+                <p></p>
+            </div>
+            <div class="column" style="background-color: #ffccad;border-radius: 2em; border-color: white;">
+                <h4>
+                    Use Cases for CreepyFace Plugin
+                </h4>
+                <p>An additional elements to make your website more interactive and fun</p>
 
-        <img data-creepyface src="https://creepyface.io/img/nala/serious"
-            data-src-hover="https://creepyface.io/img/nala/hover" data-src-look-0="https://creepyface.io/img/nala/0"
-            data-src-look-45="https://creepyface.io/img/nala/45" data-src-look-90="https://creepyface.io/img/nala/90"
-            data-src-look-135="https://creepyface.io/img/nala/135"
-            data-src-look-180="https://creepyface.io/img/nala/180"
-            data-src-look-225="https://creepyface.io/img/nala/225"
-            data-src-look-270="https://creepyface.io/img/nala/270"
-            data-src-look-315="https://creepyface.io/img/nala/315" />
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="column" style="background-color: #ffccad;border-radius: 2em; border-color: white;">
+                <h4>
+                    How to use CreepyFace Plugin
+                </h4>
+                <p></p>
+            </div>
+            <div class="column" style="background-color: #ffccad; border-radius: 2em; border-color: white;">
+                <h4>
+                    CreepyFace Plugin Demo
+                </h4>
+                <p></p>
+            </div>
 
-        <img data-creepyface src="images/serious.jpeg" data-src-hover="images/hover.jpeg"
-            data-src-look-0="images/0.jpeg" data-src-look-45="images/45.jpeg" data-src-look-90="images/90.jpeg"
-            data-src-look-135="images/135.jpeg" data-src-look-180="images/180.jpeg" data-src-look-225="images/225.jpeg"
-            data-src-look-270="images/270.jpeg" data-src-look-315="images/315.jpeg" />
+            <div class="resize">
+                <script src="https://creepyface.io/creepyface.js"></script>
 
+                <img data-creepyface src="https://creepyface.io/img/nala/serious"
+                    data-src-hover="https://creepyface.io/img/nala/hover"
+                    data-src-look-0="https://creepyface.io/img/nala/0"
+                    data-src-look-45="https://creepyface.io/img/nala/45"
+                    data-src-look-90="https://creepyface.io/img/nala/90"
+                    data-src-look-135="https://creepyface.io/img/nala/135"
+                    data-src-look-180="https://creepyface.io/img/nala/180"
+                    data-src-look-225="https://creepyface.io/img/nala/225"
+                    data-src-look-270="https://creepyface.io/img/nala/270"
+                    data-src-look-315="https://creepyface.io/img/nala/315" />
+            </div>
+            <div class="resize">
+                <img data-creepyface src="images/serious.jpeg" data-src-hover="images/hover.jpeg"
+                    data-src-look-0="images/0.jpeg" data-src-look-45="images/45.jpeg" data-src-look-90="images/90.jpeg"
+                    data-src-look-135="images/135.jpeg" data-src-look-180="images/180.jpeg"
+                    data-src-look-225="images/225.jpeg" data-src-look-270="images/270.jpeg"
+                    data-src-look-315="images/315.jpeg" />
 
-    </div>
+            </div>
 
-    <div class="container">
+            <div class="resize">
+                <script src="https://creepyface.io/creepyface.js"></script>
+                <script src="https://unpkg.com/creepyface-dance"></script>
+                <img data-creepyface data-points="bensound-buddy" src="https://creepyface.io/img/nala/serious"
+                    data-src-hover="https://creepyface.io/img/nala/hover"
+                    data-src-look-0="https://creepyface.io/img/nala/0"
+                    data-src-look-45="https://creepyface.io/img/nala/45"
+                    data-src-look-90="https://creepyface.io/img/nala/90"
+                    data-src-look-135="https://creepyface.io/img/nala/135"
+                    data-src-look-180="https://creepyface.io/img/nala/180"
+                    data-src-look-225="https://creepyface.io/img/nala/225"
+                    data-src-look-270="https://creepyface.io/img/nala/270"
+                    data-src-look-315="https://creepyface.io/img/nala/315" />
+                <audio src="https://www.bensound.com/bensound-music/bensound-buddy.mp3" controls></audio>
+                <script>
+                    const { repeat, circle } = creepyfaceDance.moves
+                    creepyfaceDance.makePointProvider({
+                        name: 'bensound-buddy',
+                        audio: document.querySelector('audio'),
+                        bpm: 150,
+                        firstBeat: 0,
+                        choreography: repeat(4)([
+                            ...repeat(20)(['w', 'e', 'n', 's']),
+                            ...repeat(20)(['nw', 'ne', 'sw', 'se']),
+                            ...repeat(20)(circle('n')),
+                            ...repeat(20)(circle('s', true)),
+                        ]),
+                    })
+                </script>
+            </div>
 
-        <script src="https://creepyface.io/creepyface.js"></script>
-        <script src="https://unpkg.com/creepyface-dance"></script>
-        <img data-creepyface data-points="bensound-buddy" src="https://creepyface.io/img/nala/serious"
-            data-src-hover="https://creepyface.io/img/nala/hover" data-src-look-0="https://creepyface.io/img/nala/0"
-            data-src-look-45="https://creepyface.io/img/nala/45" data-src-look-90="https://creepyface.io/img/nala/90"
-            data-src-look-135="https://creepyface.io/img/nala/135"
-            data-src-look-180="https://creepyface.io/img/nala/180"
-            data-src-look-225="https://creepyface.io/img/nala/225"
-            data-src-look-270="https://creepyface.io/img/nala/270"
-            data-src-look-315="https://creepyface.io/img/nala/315" />
-        <audio src="https://www.bensound.com/bensound-music/bensound-buddy.mp3" controls></audio>
-        <script>
-            const { repeat, circle } = creepyfaceDance.moves
-            creepyfaceDance.makePointProvider({
-                name: 'bensound-buddy',
-                audio: document.querySelector('audio'),
-                bpm: 150,
-                firstBeat: 0,
-                choreography: repeat(4)([
-                    ...repeat(20)(['w', 'e', 'n', 's']),
-                    ...repeat(20)(['nw', 'ne', 'sw', 'se']),
-                    ...repeat(20)(circle('n')),
-                    ...repeat(20)(circle('s', true)),
-                ]),
-            })
-        </script>
-
-    </div>
 
 </body>
 
