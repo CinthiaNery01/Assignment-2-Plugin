@@ -1,7 +1,13 @@
 h1 {
-    color: #ffccad;
+    color: #50c776;
     font-weight: 500;
     font-size: 5em;
     padding: 50px;
 }
 
+.centered-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px; /* Certifique-se de que a altura esteja definida */
+}
